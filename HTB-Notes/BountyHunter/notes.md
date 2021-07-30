@@ -51,25 +51,24 @@ XXE in http://10.10.11.100/log_submit.php
 
 ![image](https://user-images.githubusercontent.com/12052283/127711550-07faee37-6037-4cf3-8e16-a4b8b910e639.png)
 
-![image](https://user-images.githubusercontent.com/12052283/127711665-8742b8e0-692a-4ccc-a263-132dac6fb926.png)
-
 ![image](https://user-images.githubusercontent.com/12052283/127712202-21d3a5d2-dfd6-4c2d-87f6-86bede77979f.png)
 
+![image](https://user-images.githubusercontent.com/12052283/127711665-8742b8e0-692a-4ccc-a263-132dac6fb926.png)
 
-```
-User development can (root) NOPASSWD: /usr/bin/python3.8 /opt/skytrain_inc/ticketValidator.py
-ticketValidator.py is vuln_file.py
-```
+
+Doing `sudo -l` User development can `(root) NOPASSWD: /usr/bin/python3.8 /opt/skytrain_inc/ticketValidator.py`
+
+`ticketValidator.py` is the `vuln_file.py`
 
 ![image](https://user-images.githubusercontent.com/12052283/127714461-369de778-1e42-4c25-87ca-f649a62efa12.png)
 
 * Getting root from development
 
-![image](https://user-images.githubusercontent.com/12052283/127715798-3d69cfa9-8e18-4de5-8153-360f67c421ab.png)
+![image](https://user-images.githubusercontent.com/12052283/127716481-0d55f999-1806-4cd0-936f-f7c2cf36e184.png)
 
 
 # References
 
 * https://portswigger.net/web-security/xxe
 
-* 
+* https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity
