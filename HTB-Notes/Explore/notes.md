@@ -1,4 +1,4 @@
-# Explorer
+# Explore
 
 ## Scanning 
 
@@ -68,7 +68,13 @@ list devices -> `adb devices`
 
 ## Getting root
 
-* Probably activate adb in the phone using `user kristi` and then use adb to connect from Kali to Android with root
+* Starting `adb server` , local forwarding to 10.10.10.247 and redirecting trafic from local 5555 port to 10.10.10.247:5555 , then connecting with `adb connect` to localhost:5555 redirecting local trafic to 10.10.10.247:5555
+
+![image](https://user-images.githubusercontent.com/12052283/127786400-41d4a04f-78bd-4489-a2bc-5f01ff627ab5.png)
+
+* Inside shell , to escalate to sudo I only typed `su` and became `root` and then did `find . -type f -name root.txt 2>/dev/null` to find the root.txt flag
+
+![image](https://user-images.githubusercontent.com/12052283/127786705-98ec6f2d-4a0f-4416-90dd-cc1c78d0ac1f.png)
 
 
 # References
@@ -80,3 +86,7 @@ list devices -> `adb devices`
 * https://github.com/fs0c131y/ESFileExplorerOpenPortVuln
 
 * https://www.safe.security/assets/img/research-paper/pdf/es-file-explorer-vulnerability.pdf
+
+* https://serverfault.com/questions/1022710/ssh-local-forwarding
+
+* https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding

@@ -34,7 +34,7 @@ user:password -> creds of what?
 
 ```
 ```
-## Getting roott
+## Getting root
 
 
 # References
