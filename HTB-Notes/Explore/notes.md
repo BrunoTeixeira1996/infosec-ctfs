@@ -1,8 +1,9 @@
-# [Box Name]
+# Explorer
 
 ## Scanning 
 
 `sudo nmap -sC -sV -oN nmap/initial 10.10.10.247 -v`
+
 `sudo nmap -sC -sV -p- nmap/all 10.10.10.247 -v`
 
 ### Open ports
@@ -40,22 +41,26 @@ list devices -> `adb devices`
 ## Users
 
 
-```
-kistri:Kr1sT!5h@Rp3xPl0r3! -> creds found in http://10.10.10.247:59777/storage/emulated/0/DCIM/creds.jpg and got user.txt in /mnt/sdcard/user.txt
-```
+`kistri:Kr1sT!5h@Rp3xPl0r3!` -> creds found in `http://10.10.10.247:59777/storage/emulated/0/DCIM/creds.jpg` and got `user.txt` in `/mnt/sdcard/user.txt`
+
 
 
 
 ## Vuln
 
-* ES File Explorer Open Port Vulnerability - CVE-2019-6447
+* ES File Explorer Open Port Vulnerability - CVE-2019-6447 - Getting device info
 
 ![image](https://user-images.githubusercontent.com/12052283/127781306-61ac034a-bc5e-4f60-9aaf-306bbc1d89f8.png)
 
+* ES File Explorer Open Port Vulnerability - CVE-2019-6447 - Listing pics
+
 ![image](https://user-images.githubusercontent.com/12052283/127781443-c3737240-c417-4a4d-b2ba-8f1b69bb609b.png)
 
+* ES File Explorer Open Port Vulnerability - CVE-2019-6447 - Got ssh creds
 
 ![image](https://user-images.githubusercontent.com/12052283/127781492-1606dea2-03f8-40f9-8a62-fc347a877acb.png)
+
+* ES File Explorer Open Port Vulnerability - CVE-2019-6447 - Got user.txt with ssh creds
 
 ![image](https://user-images.githubusercontent.com/12052283/127781875-05e25f7b-43b1-47e2-a5d6-b5927f37f124.png)
 
@@ -63,7 +68,7 @@ kistri:Kr1sT!5h@Rp3xPl0r3! -> creds found in http://10.10.10.247:59777/storage/e
 
 ## Getting root
 
-* probably activate adb in the phone using `user kristi` and then use adb to connect from Kali to Android with root
+* Probably activate adb in the phone using `user kristi` and then use adb to connect from Kali to Android with root
 
 
 # References
