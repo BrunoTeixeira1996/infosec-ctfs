@@ -41,11 +41,12 @@ http://staging.love.htb
 
 ## Vuln
 
-
 ```
-SSRF
+Got SSRF in http://staging.love.htb/demo
 
-No filter in upload photo thats why i could upload a php rev shell
+Unrestricted File Upload while uploading a photo making a php rev shell possible
+
+Abused AlwaysInstallElevated to get root
 ```
 
 ## Getting root
