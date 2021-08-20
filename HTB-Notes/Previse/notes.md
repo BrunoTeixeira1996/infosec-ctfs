@@ -85,11 +85,13 @@ select username,password from accounts;
 
 * With the hash I ssh with user m4lwhere and got the `user.txt` flag
 
+### Getting root
+
 * Executing `sudo -l` I saw that `secure_path` is missing so it will use the user PATH and I could execute `sudo /opt/scripts/access_backup.sh` has root
 
 * So to privesc I needed to create an evil binary (with `gzip` name since the `access_backup.sh` is using gzip) with a reverse shell for example, then I added the `/tmp` folder to the user PATH so when I executed the `access_backup.sh` first it will go to the tmp folder and sees the evil `gzip` binary and then it will execute that binary
 
-Basically it will run the `access_backup.sh` and it will use the `PATH` from the current user since its not defined so it will go to `/tmp` folder first and see if it finds the `gzip` binary
+Basically it will run the `access_backup.sh` and it will use the `PATH` from the current user since its not defined so it will go to `/tmp` folder first and see if it finds the `gzip` binary. It will find the `evil gzip` and it will execute the revshel
 
 ![image](https://user-images.githubusercontent.com/12052283/130155296-bc80155e-5911-43c1-9256-4abb59adae6a.png)
 
