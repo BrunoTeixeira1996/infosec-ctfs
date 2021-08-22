@@ -44,13 +44,15 @@ m4lwhere:ilovecody112235! -> creds found in previse db
 
 * Manipulating `/files.php`
 
+* I got some redirects but then I checked ippsec Bank video and he shows how can I trick the browser by going to the `/files.php` instead of redirecting to `/login.php`. I did that in burp suite changing 302 Found to 200 OK and it worked. 
+
 ![image](https://user-images.githubusercontent.com/12052283/130097012-1c7f6f5b-0737-4c51-83fd-af2434881c2c.png)
 
 ![image](https://user-images.githubusercontent.com/12052283/130097078-b98400a4-7c1d-47cd-ae29-8ac60e8f5409.png)
 
 ![image](https://user-images.githubusercontent.com/12052283/130097127-d149dd0e-6b84-4af5-8bef-8b192555f030.png)
 
-* Created a new user and downloaded the siteBackup.zip
+* Created a new user and downloaded the siteBackup.zip .
 
 * In `logs.php` there is an `exec` command that executes a python script, so I can execute another command inside that. In the `http://10.10.11.104/file_logs.php` I can intercept in burp and I can inject the command in `delim` param.
 
