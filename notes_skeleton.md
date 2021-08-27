@@ -1,12 +1,13 @@
-# [Box Name]
+# LazyAdmin
 
 ## Scanning 
 
 `sudo nmap -sC -sV -oN nmap/initial [ip] -v`
 
+`sudo nmap -p- nmap/allports [ip] -v`
+
 `gobuster dir -u [ip] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 
-`dirsearch`
 
 ### Open ports
 
@@ -29,13 +30,9 @@ user:password -> creds of what?
 
 
 
-## Vuln
+## Notes
 
-
-```
-```
-## Getting root
-
+* 
 
 # References
 
