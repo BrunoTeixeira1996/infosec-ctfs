@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Thu Sep 23 16:58:45 2021 as: nmap -v -sC -sV -oN nmap/initial 10.10.209.51
+Nmap scan report for 10.10.209.51
+Host is up (0.073s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 23 16:59:16 2021 -- 1 IP address (1 host up) scanned in 31.49 seconds
